@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Color Picer (RCP)</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #btnRandomColor{
+      border: 3px #000 solid;
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 8px 18px;
+      color: #000;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    #btnRandomColor:hover{
+      cursor: pointer;
+      background-color: #ddd;
+      transition: all .4s;
+    }
+    #paragraphRGB{
+      font-size: 20px;
+      background-color: #fff;
+      padding: 12px;
+      border: 2px #000 solid;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnRandomColor" onclick="getColor()">Change color</button>
+  <p id="paragraphRGB">rgb(255, 255, 255)</p>
+  <script src="main.js"></script>
+</body>
+</html>
